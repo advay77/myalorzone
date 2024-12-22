@@ -1,185 +1,257 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Codystar|Josefin+Slab&display=swap'); 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@import url('https://fonts.googleapis.com/css?family=Codystar|Josefin+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
-    outline: 0;
-    }
-
-body{
-    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
 }
-img{
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
     max-width: 100%;
     height: auto;
-    
-}
-.head-of-offer, .para-of-offer{
-    color:black
-}
-.index-main-img{
-    padding-top:50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media only screen and (max-width:748px){
-    .index-main-img{
-        padding-top:116px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-} 
-@media screen and (min-width:300px){
-    .index-main-img{
-        padding-top:70px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-} 
-@media screen and (min-width:200px){
-    .index-main-img{
-        padding-top:100px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-} 
-.index-offers-img{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap:20px;
-    margin-top:10px;
-    margin-bottom: 10px;
-    margin-left:30px;
-    margin-right: 20px;
-}
-.index-grid-img-1{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:20px;
-    margin-left:20px;
-    margin-right: 20px;
-}
-
-.info-of-img-below{
-    text-align:center;
-    color:#ffffff;
-    background-color: #f84258; 
-    height:30px;
-    padding-top:5px;
-}
-@media screen and (max-width:891px){
-    .info-of-img-below{
-        font-size:12px;
-    }
-}
-@media screen and (max-width:712px){
-    .info-of-img-below{
-        font-size:9px;
-    }
-}
-.index-grid-img-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:20px;
-    margin-left:20px;
-    margin-right: 20px;
-    
-}
-
-.index-grid-img-2 img:nth-child(3){
-    width:372px;
-    object-fit:cover;
-}
-.index-grid-img-2 img:nth-child(1){
-    width:253px;
-    object-fit:cover;
-}
-.index-grid-img-2 img:nth-child(4){
-    width:372px;
-    object-fit:cover;
-}
-.index-grid-img-2 img:nth-child(2){
-    width:273px;
-    object-fit:cover;
-}
-.index-grid-img-2 img:nth-child(5){
-    width:275px;
-    object-fit:cover;
-}
-.index-grid-img-2 img:nth-child(6){
-    width:275px;
-    object-fit:cover;
-}
-.head-of-offer{
-    padding-left:50px;
-}
-.para-of-offer{
-    padding-left:50px;
-}
-@media screen and (max-width:400px){
-    .head-of-offer{
-        font-size: 16px;
-    }
-    .para-of-offer{
-        font-size:11px;
-    }  
-}
-.index-grid-img-3{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-gap: 20px;
-    margin-left:20px;
-}
-@media screen and (max-width:1130px){
-    .index-grid-img-3{
-      padding-left:30px;
-      padding-right:30px;
-    }
-  }
-  
-.footer-container{
-    align-content: center;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-gap: 20px;
-    background-color: black;
+    border-radius: 10px;
     object-fit: cover;
-    padding-bottom:30px;
-}
-.footer-container .footer-1, .footer-2, .footer-3, h5,h4,h2,h3,h6,p{
-    color:white;
+    display: block;
 }
 
-.footer-container .footer-1 h2,p,h5,h6{
-    padding-left:50px;
-    padding-top:20px  
+.index-main-img {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Added gap for consistent spacing between elements */
+    transition: padding-top 0.3s ease;
 }
 
-.footer-container .footer-2,.footer-3{
-    padding-top:70px;
+.index-offers-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transition: grid-template-columns 0.3s ease;
 }
-.copy-right{
-    font-family: 'Sacramento', cursive;
+
+.index-offers-img img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.index-grid-img-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+}
+
+.index-grid-img-1 a {
     text-align: center;
-    color:#f84258; 
-    font-size:27px;
+    display: block;
 }
-.copy-right a{
-    color:#f84258; 
+
+.info-of-img-below {
+    text-align: center;
+    color: #fff;
+    background-color: #f84258;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
-@media  screen and (max-width:593px){
-    .footer-container .footer-1 h2,p,h5,h6{
-        padding-left:10px;
+
+.index-grid-img-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.index-grid-img-2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.head-of-offer,
+.para-of-offer {
+    color: #333;
+    padding-left: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.head-of-offer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.para-of-offer {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.index-grid-img-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+}
+
+/* Footer Styling */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background: linear-gradient(135deg, #f84258, #ff7a57);
+    padding: 40px 20px;
+    color: white;
+}
+
+.footer-1, .footer-2, .footer-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-brand {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-info {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-info li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-info li {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-info li:hover {
+    color: #f84258;
+}
+
+.footer-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
-     .copy-right {
-        font-size:19px;
+    .footer-1, .footer-2, .footer-3 {
+        align-items: center;
     }
+
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .footer-links a, .footer-info li {
+        font-size: 14px;
+    }
+}
+
+.copy-right {
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.copy-right a {
+    text-decoration: none;
+    color: #070404;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .index-main-img {
+        padding-top: 80px;
+    }
+
+    .index-offers-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .index-grid-img-1,
+    .index-grid-img-2,
+    .index-grid-img-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .head-of-offer {
+        font-size: 1.5rem;
+    }
+
+    .para-of-offer {
+        font-size: 0.9rem;
+    }
+
+    .copy-right {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.index-grid-img-1,
+.index-grid-img-2,
+.index-grid-img-3 {
+    animation: slideIn 1s ease-out forwards;
 }

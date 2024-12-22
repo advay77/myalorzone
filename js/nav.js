@@ -1,28 +1,15 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li')
-    
-    burger.addEventListener('click',()=> {
-        //toggle nav
-        nav.classList.toggle('nav-active');
+let lastScrollTop = 0;
+const nav = document.querySelector('nav');
 
-          // animate links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation){
-                link.style.animation = ''
-            }
-            else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.6 }s`;
-            }  
-        });
-        //burger animation
-        burger.classList.toggle('toggle');
-  
-    });
+window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
- 
-}
-
-
-navSlide();
+    if (currentScroll > lastScrollTop) {
+        // Scrolling Down
+        nav.style.top = "-10vh"; // Hide navbar
+    } else {
+        // Scrolling Up
+        nav.style.top = "0"; // Show navbar
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

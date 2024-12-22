@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head> 
-  
+
   <body>
     <!-- Navbar -->
     <nav> 
@@ -40,7 +40,7 @@
     </h2>
 
     <br>
-    <div class="bg-images">
+    <div class="img-container">
       <a href="products.html">
         <img src="images/products-img/marcus-loke-xXJ6utyoSw0-unsplash (1).jpg" alt="Fashion Image">
       </a>
@@ -60,23 +60,45 @@
       <br><br>
 
       <div class="kurti">
-        <img src="images/products-img/women/kurti1.png" id="AKS Kurta with Palazzo & Dupatta || Rs.1799" onclick="add(this.id)">
-        <img src="images/products-img/women/kurti2.png" id="Nayo Women Solid Kurta with Trouser || Rs.1649" onclick="add(this.id)">
-        <img src="images/products-img/women/kurti3.png" id="AKS Printed Straight Kurta || Rs.659" onclick="add(this.id)">
-        <img src="images/products-img/women/kurti4.png" id="Fabindia Slim Fit Straight Kurta || Rs.1990" onclick="add(this.id)">
-      </div> 
-
-   
+        <div class="product">
+          <img src="images/products-img/women/kurti1.png" id="AKS Kurta with Palazzo & Dupatta || Rs.1799" onclick="add(this.id)">
+          <p class="product-description">Elegant AKS Kurta with Palazzo & Dupatta – Perfect for all occasions</p>
+        </div>
+        <div class="product">
+          <img src="images/products-img/women/kurti2.png" id="Nayo Women Solid Kurta with Trouser || Rs.1649" onclick="add(this.id)">
+          <p class="product-description">Nayo Women Solid Kurta with Trouser – Comfortable and stylish</p>
+        </div>
+        <div class="product">
+          <img src="images/products-img/women/kurti3.png" id="AKS Printed Straight Kurta || Rs.659" onclick="add(this.id)">
+          <p class="product-description">AKS Printed Straight Kurta – Affordable and elegant</p>
+        </div>
+        <div class="product">
+          <img src="images/products-img/women/kurti4.png" id="Fabindia Slim Fit Straight Kurta || Rs.1990" onclick="add(this.id)">
+          <p class="product-description">Fabindia Slim Fit Straight Kurta – Premium design and feel</p>
+        </div>
+      </div>
 
       <h1>For <span class="colored-word">Him</span></h1>
       <center><hr class="products-hr"></center>
       <br><br>
 
       <div class="shirts">
-        <img src="images/products-img/men/shirt1.png" id="Difference of Opinion Printed Shirt || Rs.449" onclick="add(this.id)">
-        <img src="images/products-img/men/shirt2.png" id="Moda Rapido Printed Round Neck T-shirt || Rs.486" onclick="add(this.id)">
-        <img src="images/products-img/men/shirt3.png" id="DILLINGER Colourblocked Round Neck T-shirt || Rs.404" onclick="add(this.id)">
-        <img src="images/products-img/men/shirt4.png" id="Roadster T-shirt with Shoulder Patch || Rs.519" onclick="add(this.id)">
+        <div class="product">
+          <img src="images/products-img/men/shirt1.png" id="Difference of Opinion Printed Shirt || Rs.449" onclick="add(this.id)">
+          <p class="product-description">Difference of Opinion Printed Shirt – Stylish and modern</p>
+        </div>
+        <div class="product">
+          <img src="images/products-img/men/shirt2.png" id="Moda Rapido Printed Round Neck T-shirt || Rs.486" onclick="add(this.id)">
+          <p class="product-description">Moda Rapido Printed Round Neck T-shirt – Casual and comfortable</p>
+        </div>
+        <div class="product">
+          <img src="images/products-img/men/shirt3.png" id="DILLINGER Colourblocked Round Neck T-shirt || Rs.404" onclick="add(this.id)">
+          <p class="product-description">DILLINGER Colourblocked Round Neck T-shirt – Stylish and colorful</p>
+        </div>
+        <div class="product">
+          <img src="images/products-img/men/shirt4.png" id="Roadster T-shirt with Shoulder Patch || Rs.519" onclick="add(this.id)">
+          <p class="product-description">Roadster T-shirt with Shoulder Patch – Trendy and cool</p>
+        </div>
       </div>
 
       <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>

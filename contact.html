@@ -5,59 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyTalorZone FASHION CLUB</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Nova+Cut&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style_index.css">
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/categories.css">
 </head>
 <style>
-   .slogan{
-    font-family: 'Beth Ellen', cursive;
-    color:black;
-    font-size: 36px;
-  }
-   .author{
-    font-family: 'Nova Cut', cursive;
-    color:black;
-  } 
-  .contact-info{
-    padding-top:170px;
-  }
+   body {
+     font-family: 'Montserrat', sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background-color: #f5f5f5;
+   }
+
+   .contact-info {
+     padding-top: 40px;
+     text-align: center;
+     background-color: #ffffff;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     padding: 40px;
+     margin: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .slogan {
+     font-family: 'Beth Ellen', cursive;
+     color: #2c3e50;
+     font-size: 36px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+     transition: color 0.3s ease;
+   }
+
+   .slogan:hover {
+     color: #e74c3c;
+   }
+
+   .author {
+     font-family: 'Nova Cut', cursive;
+     color: #34495e;
+     font-size: 18px;
+     transition: color 0.3s ease;
+     margin-top: 10px;
+   }
+
+   .author:hover {
+     color: #e74c3c;
+   }
+
+   .contact-info a {
+     text-decoration: none;
+     color: #0077b6;
+     font-weight: bold;
+     transition: color 0.3s ease;
+   }
+
+   .contact-info a:hover {
+     color: #e74c3c;
+   }
 </style>
-<body> 
-    <!-- navbar -->
-      <nav>
+<body>
+    <nav>
         <div class="logo">
-          <h3><a href="merlin.html" class="logo-name">MyTalorZone Fashion</a></h3>
+            <h3><a href="merlin.html" class="logo-name">MyTalorZone Fashion</a></h3>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="contact.html">ContactUs</a></li>
-          <li><a href="login.html" id="login">Login</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+            <li><a href="login.html" >Login</a></li>
         </ul>
         <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-      </nav>
-    <!-- navbar -->
-    <center>
-      <div class="contact-info">
+    </nav>
+    <div class="contact-info">
         <p class="slogan">"MyTalorZone Fashion."</p>
         <p class="author">ADVAY ANAND</p>
-        
         <p class="author">advayanand87@gmail.com</p>
-          <p class="author"><a href="https://www.linkedin.com/in/advay-anand-a89024277/" class="logo-name">On LinkedIn</a></p>
-      </div>
-    </center>
-      
-  
-  <script type="text/javascript" src="js/nav.js"></script>
-  </body>
+        <p class="author"><a href="https://www.linkedin.com/in/advay-anand-a89024277/" class="logo-name">On LinkedIn</a></p>
+    </div>
+</body>
+<script type="text/javascript" src="js/nav.js"></script>
 </html>

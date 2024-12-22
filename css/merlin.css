@@ -1,36 +1,86 @@
-.merlin-grids1,.merlin-grids2{
+.merlin-grids1, .merlin-grids2 {
     padding-left: 40px;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    
-}
-.merlin-grids2{
-    padding-right:40px;
-    grid-gap:10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.merlin-grids1{
+.merlin-grids2 {
+    padding-right: 40px;
+    grid-gap: 15px;
+    background-color: #e9ecef;
+}
+
+.merlin-grids1 {
     padding-top: 10px;
-    padding-right:30px;
-    grid-gap:20px;
-}
-.merlin-grids2 img:nth-child(2){
-    padding-top: 70px;
+    padding-right: 30px;
+    grid-gap: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
 }
 
-@media screen and (max-width:452px){
-    .merlin-grids2 img:nth-child(2){
+.merlin-grids1:hover, .merlin-grids2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+}
+
+.merlin-grids2 img:nth-child(2) {
+    padding-top: 70px;
+    transition: padding-top 0.3s ease;
+}
+
+@media screen and (max-width: 452px) {
+    .merlin-grids2 img:nth-child(2) {
         padding-top: 20px;
     }
 }
-@media screen and (max-width:780px) and (min-width:1014px){
-    .merlin-grids1{
+
+@media screen and (max-width: 780px) and (min-width: 1014px) {
+    .merlin-grids1 {
         padding-top: 160px;
     }
 }
-@media screen and (max-width:1280px){
-    .merlin-grids1, .merlin-grids2{
+
+@media screen and (max-width: 1280px) {
+    .merlin-grids1, .merlin-grids2 {
         padding-left: 30px;
         padding-right: 30px;
     }
+}
+
+.merlin-grids1 img, .merlin-grids2 img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.merlin-grids1 img:hover, .merlin-grids2 img:hover {
+    transform: scale(1.05);
+}
+
+.merlin-grids1, .merlin-grids2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.merlin-grids1 .heading, .merlin-grids2 .heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.merlin-grids1 .description, .merlin-grids2 .description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
 }
